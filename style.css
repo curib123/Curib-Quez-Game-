@@ -1,0 +1,249 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif;
+}
+body{
+     background: #326789;
+}
+
+.btn-container, #info-container, #game-box, .result-box{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn-container{
+   text-align: center;
+   background: #244D61;
+   padding: 20px 10px;
+ box-shadow: 0 20px 30px rgb(0,0,0,0.3);
+}
+.btn-container #logo{
+    padding: 7px 10px;
+    font-size: 20px;
+   font-weight: bolder;
+   border: none;
+   color: white;
+   background: transparent;
+   pointer-events: none;
+   display: block;
+   width: 100%;
+   
+}
+.btn-container #start-btn{
+    padding: 7px 10px;
+    font-size: 15px;
+   font-weight: bolder;
+   border: none;
+   color: #fff;
+   background: transparent;
+   cursor: progress;
+   box-shadow: 0px 20px 30px rgb(0,0,0,0.3);
+   display: block;
+   margin-top: 10px;
+   width: 100%;
+   
+}
+.btn-container #start-btn:hover{
+    opacity: 0.8;
+    transition: 0.5;
+}
+
+
+#info-container{
+    background: #244D61;
+    width: 270px;
+    height: 350px;
+    font-size: 20px;
+   color: #fff;
+    padding: 10px;
+    box-shadow: 0 20px 30px rgb(0,0,0,0.3);
+    opacity: 0;
+    transform:  translate(-50%,-50%) scale(0.2);
+    pointer-events: none;
+    transition: all 0.5s ease;
+    }
+#info-container.show, #game-box.show, .result-box.show{
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+  z-index: 5;
+  
+}
+#info-container .title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+#info-container .info-content {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+
+#info-container .info-content .info{
+   padding-left: 5px; 
+   margin-top: 10px;
+   font-size: 17px;
+}
+#info-container .btn{
+   padding-top:10px;
+   padding-left: 40px;
+}
+#info-container .btn input{
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    color: #244D61;
+    background: thistle;
+    margin: 0 5px;
+    width: 70px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#info-container .btn  #exit{
+    background: white;
+        color: #244D61;
+}
+#info-container .btn #continue{
+    background: white;
+    color: #244D61;
+}
+#game-box{
+    background: #244D61;
+    width: 270px;
+    height: 350px;
+   color: #fff;
+    padding: 20px 15px;
+    box-shadow: 0 20px 30px rgb(0,0,0,0.3);
+    opacity: 0;
+    transform:  translate(-50%,-50%) scale(0.2);
+    pointer-events: none;
+    transition: all 0.5s ease;
+       
+}
+#game-box header{
+    display: inline;
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+
+#game-box header .text{
+    font-size: 20px;
+}
+#game-box header{
+    font-weight: bold;
+    margin: 10px 0;
+}
+#game-box header .timer{
+    background: white;
+    color: #244D61;
+    padding: 5px 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#game-box header .timer .time{
+    color: #244D61;
+}
+#game-box section {
+    margin-top: 40px;
+}
+#game-box section .question{
+    font-weight: bolder;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+#game-box section .option-list{
+    padding-bottom: 10px;
+    
+}
+#game-box section .option-list button{
+    padding: 3px 7px;
+    color: #244D61;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+   
+    
+}
+
+
+#game-box footer{
+    border-top: 2px solid white;
+    padding-top: 10px;
+}
+#game-box footer .text{
+    font-size: 15px;
+    font-weight: bold;
+}
+#game-box footer #next{
+    margin-left: 50px;
+    padding: 5px 5px;
+    border: none;
+    background: #fff;
+    color: #244D61;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+
+.result-box{
+    background: #244D61;
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    text-align: center;
+     opacity: 0;
+    transform:  translate(-50%,-50%) scale(0.3);     
+     pointer-events: none;
+    transition: all 0.5s ease;
+    
+}
+.result-box .icon{
+    font-size: 100px;
+    padding: 20px 0;
+    color: #5689C0;
+}
+.result-box .complete_text{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.result-box .score_text{
+    padding: 10px 0;
+    font-weight: bold;
+}
+.result-box button{
+    padding: 7px 7px;
+   color: #244D61;
+    background: #fff;
+    margin-left: 15px;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  
+}
+
+button.check{
+   border: 3px solid skyblue;
+   
+}
+
+button.pointer{
+    pointer-events: none;
+}

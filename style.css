@@ -59,7 +59,7 @@ body{
 #info-container{
     background: #244D61;
     width: 270px;
-    height: 365px;
+    height: 375px;
     font-size: 15px;
    color: #fff;
     padding: 10px;
@@ -101,7 +101,7 @@ body{
    padding-left: 40px;
 }
 #info-container .btn input{
-    padding: 5px 10px;
+    padding: 5px 15px;
     border: 2px solid transparent;
     color: #244D61;
     background: thistle;
@@ -204,8 +204,8 @@ body{
 
 .result-box{
     background: #244D61;
-    width: 285px;
-    height: 365px;
+    width: 250px;
+    height: 300px;
     color: #fff;
     text-align: center;
      opacity: 0;

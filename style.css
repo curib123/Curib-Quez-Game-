@@ -59,7 +59,7 @@ body{
 #info-container{
     background: #244D61;
     width: 270px;
-    height: 350px;
+    height: 365px;
     font-size: 20px;
    color: #fff;
     padding: 10px;
@@ -121,8 +121,8 @@ body{
 }
 #game-box{
     background: #244D61;
-    width: 270px;
-    height: 350px;
+    width: 285px;
+    height: 365px;
    color: #fff;
     padding: 20px 15px;
     box-shadow: 0 20px 30px rgb(0,0,0,0.3);
@@ -204,8 +204,8 @@ body{
 
 .result-box{
     background: #244D61;
-    width: 250px;
-    height: 250px;
+    width: 285px;
+    height: 365px;
     color: #fff;
     text-align: center;
      opacity: 0;

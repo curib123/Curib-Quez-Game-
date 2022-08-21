@@ -1,0 +1,93 @@
+
+<!-- Curib Game Development with html/Css/JavaScript -->
+<!-- John Paul Cajes Curib -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Curib Quest Game</title>
+</head>
+<body>
+    
+   <!-- Start button ni kasabot -->
+   <div class="btn-container">
+       <label id="logo">Curib Game </label>
+       <input type="button" value="Start Game" id="start-btn"> 
+       
+   </div>
+   <!-- end sa start button -->
+   
+   <!-- Rule's nih sa duwa kasabot-->
+   <div id="info-container">
+       <div class="title">Some Rules of the Game</div>
+       <div class="info-content">
+           <div class="info">1. Meron kang <span> 30 seconds </span> para sagutan ang mga tanong.</div>
+           <div class="info">2. Kung nakasagutan kana hindi muna ito kayang ulitin.</div>
+           <div class="info">3. Tapos na ang laru kung naubos na ang iyong oras.</div>
+           <div class="info">4. Hindi ka makakalabas ng laru hanggang hindi pa naubos ang oras</div>
+           <div class="info">5. Makakakuha  ka ng dalawang puntos bawat tanong kung ito ay tama 0 kung hindi tama..</div>
+       </div>
+       <div class="btn">
+       <input type="button" value="Exit"id="exit">
+       <input type="button" value="Continue"id="continue">
+       </div>
+   </div>
+   <!-- end sa game rules -->
+   
+   <!-- Game section nih -->
+   
+   <div id="game-box">
+       <header>
+           <label class="text">Curib Quiz Game</label>
+          <label class="timer">Time Left: <span class="time">00</span></label>
+       </header>
+       <section>
+           <div class="question">None</div>
+           
+           <div class="option-list">
+               <button id="a">None</button>
+               <button id="b">None</button>
+               <button id="c">None</button>
+               <button id="d">None</button>
+           </div>
+       </section>
+       <footer>
+           <label class="text"><span id="number">1</span> of <span class="gamelength">0</span> Question</label>
+           <button id="next">Next Question</button>
+       </footer>
+   </div>
+  
+  
+   <!-- end -->
+   
+   <!-- Resulta nis duwa ahak mao nih-->
+   
+    <div class="result-box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+           You got <span class="score">00</span> over <span class="over">00</span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+       
+   </div>
+   
+   <!-- kataposan nih results -->
+   
+   <!-- Script file nih kasabot -->
+   <script src="js/script.js"></script>
+   <script src="js/quez.js"></script>
+   <!-- end -->
+</body>
+</html>
